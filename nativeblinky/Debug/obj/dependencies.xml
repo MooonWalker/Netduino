@@ -15,11 +15,11 @@
       </source>
       <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="1458dbbb687">
       </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="145996c1194">
+      </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="1459316554a">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1458dbbba51">
       </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="14593188107">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>

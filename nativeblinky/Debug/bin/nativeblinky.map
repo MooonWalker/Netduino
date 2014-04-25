@@ -474,19 +474,19 @@ Linker script and memory map
                 0x08000188                DMA2_Stream6_IRQHandler
                 0x08000188                DMA1_Stream3_IRQHandler
  .text.Default_Reset_Handler
-                0x0800018c       0x68 ..\obj\startup_stm32f4xx.o
+                0x0800018c       0x6c ..\obj\startup_stm32f4xx.o
                 0x0800018c                Default_Reset_Handler
                 0x0800018c                Reset_Handler
  .text.SysTick_Handler
-                0x080001f4       0x10 ..\obj\main.o
-                0x080001f4                SysTick_Handler
- .text.Delay    0x08000204       0x14 ..\obj\main.o
-                0x08000204                Delay
+                0x080001f8       0x10 ..\obj\main.o
+                0x080001f8                SysTick_Handler
+ .text.Delay    0x08000208       0x14 ..\obj\main.o
+                0x08000208                Delay
  .text.init_GPIO
-                0x08000218       0x3c ..\obj\main.o
-                0x08000218                init_GPIO
- .text.main     0x08000254       0x70 ..\obj\main.o
-                0x08000254                main
+                0x0800021c       0x3c ..\obj\main.o
+                0x0800021c                init_GPIO
+ .text.main     0x08000258       0x6c ..\obj\main.o
+                0x08000258                main
  .text.RCC_AHB1PeriphClockCmd
                 0x080002c4       0x1c ..\obj\stm32f4xx_rcc.o
                 0x080002c4                RCC_AHB1PeriphClockCmd
@@ -618,18 +618,18 @@ END GROUP
 OUTPUT(nativeblinky.elf elf32-littlearm)
 
 .debug_info     0x00000000     0x254f
- .debug_info    0x00000000      0x10a ..\obj\startup_stm32f4xx.o
- .debug_info    0x0000010a      0xa2c ..\obj\main.o
+ .debug_info    0x00000000      0x11a ..\obj\startup_stm32f4xx.o
+ .debug_info    0x0000011a      0xa1c ..\obj\main.o
  .debug_info    0x00000b36      0xc8c ..\obj\stm32f4xx_rcc.o
  .debug_info    0x000017c2      0x7d6 ..\obj\stm32f4xx_gpio.o
  .debug_info    0x00001f98      0x5b7 ..\obj\system_stm32f4xx.o
 
-.debug_abbrev   0x00000000      0x8b2
- .debug_abbrev  0x00000000       0xd9 ..\obj\startup_stm32f4xx.o
- .debug_abbrev  0x000000d9      0x28e ..\obj\main.o
- .debug_abbrev  0x00000367      0x209 ..\obj\stm32f4xx_rcc.o
- .debug_abbrev  0x00000570      0x1e3 ..\obj\stm32f4xx_gpio.o
- .debug_abbrev  0x00000753      0x15f ..\obj\system_stm32f4xx.o
+.debug_abbrev   0x00000000      0x8c3
+ .debug_abbrev  0x00000000       0xea ..\obj\startup_stm32f4xx.o
+ .debug_abbrev  0x000000ea      0x28e ..\obj\main.o
+ .debug_abbrev  0x00000378      0x209 ..\obj\stm32f4xx_rcc.o
+ .debug_abbrev  0x00000581      0x1e3 ..\obj\stm32f4xx_gpio.o
+ .debug_abbrev  0x00000764      0x15f ..\obj\system_stm32f4xx.o
 
 .debug_loc      0x00000000      0xed4
  .debug_loc     0x00000000       0x22 ..\obj\startup_stm32f4xx.o
@@ -658,17 +658,17 @@ OUTPUT(nativeblinky.elf elf32-littlearm)
  .debug_ranges  0x00000220       0x18 ..\obj\system_stm32f4xx.o
 
 .debug_line     0x00000000      0xb6d
- .debug_line    0x00000000       0x88 ..\obj\startup_stm32f4xx.o
- .debug_line    0x00000088      0x1f9 ..\obj\main.o
+ .debug_line    0x00000000       0x89 ..\obj\startup_stm32f4xx.o
+ .debug_line    0x00000089      0x1f8 ..\obj\main.o
  .debug_line    0x00000281      0x4da ..\obj\stm32f4xx_rcc.o
  .debug_line    0x0000075b      0x2ba ..\obj\stm32f4xx_gpio.o
  .debug_line    0x00000a15      0x158 ..\obj\system_stm32f4xx.o
 
 .debug_str      0x00000000     0x127a
- .debug_str     0x00000000      0x14e ..\obj\startup_stm32f4xx.o
-                                0x160 (size before relaxing)
- .debug_str     0x0000014e      0x91b ..\obj\main.o
-                                0xa23 (size before relaxing)
+ .debug_str     0x00000000      0x159 ..\obj\startup_stm32f4xx.o
+                                0x16b (size before relaxing)
+ .debug_str     0x00000159      0x910 ..\obj\main.o
+                                0xa18 (size before relaxing)
  .debug_str     0x00000a69      0x63d ..\obj\stm32f4xx_rcc.o
                                 0x864 (size before relaxing)
  .debug_str     0x000010a6      0x150 ..\obj\stm32f4xx_gpio.o

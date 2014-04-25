@@ -63,7 +63,7 @@ int main(void)
 {
 	//volatile unsigned int i=0;
 
-	SystemInit();
+
 	SystemCoreClockUpdate();
 	if (SysTick_Config(SystemCoreClock / 1000))
 	{ /* SysTick 1 msec interrupts  */
