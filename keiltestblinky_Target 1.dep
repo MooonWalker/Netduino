@@ -1,0 +1,49 @@
+Dependencies for Project 'keiltestblinky', Target 'Target 1': (DO NOT MODIFY !)
+F (.\maiin.c)(0x5358DDEE)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork -I C:\DATA\Dropbox\Netduino\RTE-I C:\DATA\Dropbox\Netduino\RTE\Device\STM32F405RG-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\Device\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\Device\StdPeriph_Driver\inc-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\RTE_Driver-D_RTE_ -DSTM32F40_41xxx -o .\maiin.o --omf_browse .\maiin.crf --depend .\maiin.d)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\Device\Include\stm32f4xx.h)(0x529F1D92)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm4.h)(0x512C80D2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FE34EE)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAB7D4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C80D2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm4_simd.h)(0x522D9D58)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\Device\Include\system_stm32f4xx.h)(0x529F1D92)
+F (RTE\Device\STM32F405RG\RTE_Device.h)(0x52F0C3E8)()
+F (RTE\Device\STM32F405RG\startup_stm32f40_41xxx.s)(0x529F1D92)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\DATA\Dropbox\Netduino\RTE-I C:\DATA\Dropbox\Netduino\RTE\Device\STM32F405RG-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\Device\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\Device\StdPeriph_Driver\inc-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\RTE_Driver--list .\startup_stm32f40_41xxx.lst --xref -o .\startup_stm32f40_41xxx.o --depend .\startup_stm32f40_41xxx.d)
+F (RTE\Device\STM32F405RG\system_stm32f4xx.c)(0x529F1D92)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork -I C:\DATA\Dropbox\Netduino\RTE-I C:\DATA\Dropbox\Netduino\RTE\Device\STM32F405RG-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\Device\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\Device\StdPeriph_Driver\inc-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\RTE_Driver-D_RTE_ -DSTM32F40_41xxx -o .\system_stm32f4xx.o --omf_browse .\system_stm32f4xx.crf --depend .\system_stm32f4xx.d)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\Device\Include\stm32f4xx.h)(0x529F1D92)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm4.h)(0x512C80D2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FE34EE)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAB7D4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C80D2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm4_simd.h)(0x522D9D58)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\Device\Include\system_stm32f4xx.h)(0x529F1D92)
+F (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\Device\StdPeriph_Driver\src\stm32f4xx_rcc.c)(0x52B40F56)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork -I C:\DATA\Dropbox\Netduino\RTE-I C:\DATA\Dropbox\Netduino\RTE\Device\STM32F405RG-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\Device\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\Device\StdPeriph_Driver\inc-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\RTE_Driver-D_RTE_ -DSTM32F40_41xxx -o .\stm32f4xx_rcc.o --omf_browse .\stm32f4xx_rcc.crf --depend .\stm32f4xx_rcc.d)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\Device\StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x52B40F56)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\Device\Include\stm32f4xx.h)(0x529F1D92)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm4.h)(0x512C80D2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FE34EE)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAB7D4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C80D2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm4_simd.h)(0x522D9D58)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\Device\Include\system_stm32f4xx.h)(0x529F1D92)
+F (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\Device\StdPeriph_Driver\src\stm32f4xx_tim.c)(0x52B40F56)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork -I C:\DATA\Dropbox\Netduino\RTE-I C:\DATA\Dropbox\Netduino\RTE\Device\STM32F405RG-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\Device\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\Device\StdPeriph_Driver\inc-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\RTE_Driver-D_RTE_ -DSTM32F40_41xxx -o .\stm32f4xx_tim.o --omf_browse .\stm32f4xx_tim.crf --depend .\stm32f4xx_tim.d)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\Device\StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x52B40F56)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\Device\Include\stm32f4xx.h)(0x529F1D92)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm4.h)(0x512C80D2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FE34EE)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAB7D4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C80D2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm4_simd.h)(0x522D9D58)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\Device\Include\system_stm32f4xx.h)(0x529F1D92)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\Device\StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x52B40F56)
+F (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\RTE_Driver\GPIO_STM32F4xx.c)(0x51418878)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork -I C:\DATA\Dropbox\Netduino\RTE-I C:\DATA\Dropbox\Netduino\RTE\Device\STM32F405RG-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\Device\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\Device\StdPeriph_Driver\inc-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\RTE_Driver-D_RTE_ -DSTM32F40_41xxx -o .\gpio_stm32f4xx.o --omf_browse .\gpio_stm32f4xx.crf --depend .\gpio_stm32f4xx.d)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\RTE_Driver\GPIO_STM32F4xx.h)(0x52D7ABF4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FE34EE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x52FE34EE)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\Device\Include\stm32f4xx.h)(0x529F1D92)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm4.h)(0x512C80D2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAB7D4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C80D2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm4_simd.h)(0x522D9D58)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.6\Device\Include\system_stm32f4xx.h)(0x529F1D92)
+F (RTE\Device\STM32F405RG\stm32f4xx_conf.h)(0x52E62DB8)()

@@ -1,0 +1,36 @@
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\obj\Debug\breathing led.csprojResolveAssemblyReference.cache
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\obj\Debug\TinyCLR_DebugReferences.cache
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\le\breathing led.exe
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\be\breathing led.exe
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\le\breathing led.pdb
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\be\breathing led.pdb
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\breathing led.exe
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\breathing led.pdb
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\le\breathing led.pe
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\le\breathing led.pdbx
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\be\breathing led.pe
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\be\breathing led.pdbx
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\LE\SecretLabs.NETMF.Hardware.pe
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\LE\SecretLabs.NETMF.Hardware.Netduino.pe
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\BE\SecretLabs.NETMF.Hardware.pe
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\BE\SecretLabs.NETMF.Hardware.Netduino.pe
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\LE\SecretLabs.NETMF.Hardware.pdbx
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\LE\SecretLabs.NETMF.Hardware.Netduino.pdbx
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\BE\SecretLabs.NETMF.Hardware.pdbx
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\BE\SecretLabs.NETMF.Hardware.Netduino.pdbx
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\SecretLabs.NETMF.Hardware.dll
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\SecretLabs.NETMF.Hardware.Netduino.dll
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\SecretLabs.NETMF.Hardware.pdb
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\SecretLabs.NETMF.Hardware.Netduino.pdb
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\obj\Debug\be\breathing led.pe
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\obj\Debug\be\breathing led.pdbx
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\obj\Debug\le\breathing led.pe
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\obj\Debug\le\breathing led.pdbx
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\obj\Debug\breathing led.exe
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\obj\Debug\breathing led.pdb
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\LE\SecretLabs.NETMF.Hardware.NetduinoPlus.pe
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\BE\SecretLabs.NETMF.Hardware.NetduinoPlus.pe
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\LE\SecretLabs.NETMF.Hardware.NetduinoPlus.pdbx
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\BE\SecretLabs.NETMF.Hardware.NetduinoPlus.pdbx
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\SecretLabs.NETMF.Hardware.NetduinoPlus.dll
+C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\SecretLabs.NETMF.Hardware.NetduinoPlus.pdb
