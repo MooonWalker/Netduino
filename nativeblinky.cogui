@@ -13,13 +13,14 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/DATA/Dropbox/Netduino/main.c" title="main.c" tooltip="C:/DATA/Dropbox/Netduino/main.c" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/DATA/Dropbox/Netduino/main.c" title="main.c" tooltip="C:/DATA/Dropbox/Netduino/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/nativeblinky/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1660" selectionTopPixel="1055"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1660" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f4xx.c" partName="system_stm32f4xx.c" path="C:/DATA/Dropbox/Netduino/cmsis_boot/system_stm32f4xx.c" title="system_stm32f4xx.c" tooltip="C:/DATA/Dropbox/Netduino/cmsis_boot/system_stm32f4xx.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/nativeblinky/cmsis_boot/system_stm32f4xx.c"/>
@@ -28,6 +29,11 @@
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="startup_stm32f4xx.c" partName="startup_stm32f4xx.c" path="C:/DATA/Dropbox/Netduino/cmsis_boot/startup/startup_stm32f4xx.c" title="startup_stm32f4xx.c" tooltip="C:/DATA/Dropbox/Netduino/cmsis_boot/startup/startup_stm32f4xx.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/nativeblinky/cmsis_boot/startup/startup_stm32f4xx.c"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="15726" selectionTopPixel="5520"/>
+</editor>
+<editor activePart="true" focus="true" id="org.coocox.builder.ui.editors.ConfigEditor" name="" partName="Configuration" title="Configuration" tooltip="" workbook="DefaultEditorWorkbook">
+<input factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory">
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="6" verticalPosition="0"/>
+</input>
 </editor>
 </editors>
 <views>
@@ -40,14 +46,9 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
 <expanded>
 <element path="/nativeblinky"/>
-<element path="/nativeblinky/cmsis_boot"/>
-<element path="/nativeblinky/cmsis_boot/startup"/>
-<element path="/nativeblinky/cmsis_lib"/>
-<element path="/nativeblinky/cmsis_lib/include"/>
-<element path="/nativeblinky/cmsis_lib/source"/>
 </expanded>
 <selection>
-<element path="/nativeblinky/cmsis_boot/startup/startup_stm32f4xx.c"/>
+<element path="/nativeblinky"/>
 </selection>
 </viewState>
 </view>
@@ -78,7 +79,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.coocox.builder.perspective.CoBuilder">
+<perspectives activePart="org.coocox.builder.ui.editors.ConfigEditor" activePerspective="org.coocox.builder.perspective.CoBuilder">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.coocox.builder.ui.PerspectiveCoBuilder" id="org.coocox.builder.perspective.CoBuilder" label="CooCox CoBuilder"/>
 <alwaysOnActionSet id="org.coocox.component.ui.actionSet"/>
@@ -275,28 +276,19 @@
 </editor>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/nativeblinky/cmsis_boot/startup/startup_stm32f4xx.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/nativeblinky/cmsis_boot/system_stm32f4xx.c"/>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor/>
+</editor>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor/>
+</editor>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor/>
+</editor>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="6" verticalPosition="0"/>
+</editor>
 </editors>
-<item historyLabel="system_stm32f4xx.c" index="1">
-<position info="not_deleted" x="14546" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="1">
-<position info="not_deleted" x="14597" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="1">
-<position info="not_deleted" x="14637" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="1">
-<position info="not_deleted" x="14766" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="1">
-<position info="not_deleted" x="14806" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="1">
-<position info="not_deleted" x="14864" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="1">
-<position info="not_deleted" x="14937" y="0"/>
-</item>
 <item historyLabel="system_stm32f4xx.c" index="1">
 <position info="not_deleted" x="15009" y="0"/>
 </item>
@@ -419,9 +411,22 @@
 <item historyLabel="startup_stm32f4xx.c" index="8">
 <position info="not_deleted" x="15726" y="0"/>
 </item>
-<item active="true" historyLabel="main.c" index="0">
+<item historyLabel="main.c" index="0">
 <position info="not_deleted" x="1971" y="0"/>
 </item>
+<item historyLabel="Configuration" index="10"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1660" y="0"/>
+</item>
+<item historyLabel="Configuration" index="11"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1660" y="0"/>
+</item>
+<item historyLabel="Configuration" index="12"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1660" y="0"/>
+</item>
+<item active="true" historyLabel="Configuration" index="13"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
@@ -429,8 +434,13 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="startup_stm32f4xx.c" tooltip="nativeblinky/cmsis_boot/startup/startup_stm32f4xx.c">
-<persistable path="/nativeblinky/cmsis_boot/startup/startup_stm32f4xx.c"/>
+<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor" name="" tooltip="">
+<persistable>
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="6" verticalPosition="0"/>
+</persistable>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="baseflight.uvproj" tooltip="C:\DATA\Dropbox\baseflight\baseflight.uvproj">
+<persistable uri="file:/C:/DATA/Dropbox/baseflight/baseflight.uvproj"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f4xx.c" tooltip="nativeblinky/cmsis_boot/system_stm32f4xx.c">
 <persistable path="/nativeblinky/cmsis_boot/system_stm32f4xx.c"/>
@@ -467,15 +477,11 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_it.h" tooltip="Blinky mit SysTick/stm32f4xx_it.h">
 <persistable path="/Blinky mit SysTick/stm32f4xx_it.h"/>
 </file>
-<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
-<persistable>&#x0A;<subPage/>
-</persistable>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="baseflight.uvproj" tooltip="C:\DATA\Dropbox\baseflight\baseflight.uvproj">
+<persistable uri="file:/C:/DATA/Dropbox/baseflight/baseflight.uvproj"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_rcc.c" tooltip="nativeblinky/cmsis_lib/source/stm32f4xx_rcc.c">
-<persistable path="/nativeblinky/cmsis_lib/source/stm32f4xx_rcc.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_rcc.c" tooltip="nativeblinky/cmsis_lib/source/stm32f4xx_rcc.c">
-<persistable path="/nativeblinky/cmsis_lib/source/stm32f4xx_rcc.c"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="baseflight.uvproj" tooltip="C:\DATA\Dropbox\baseflight\baseflight.uvproj">
+<persistable uri="file:/C:/DATA/Dropbox/baseflight/baseflight.uvproj"/>
 </file>
 </mruList>
 </workbench>
