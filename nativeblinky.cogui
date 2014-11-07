@@ -12,27 +12,17 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
-<part id="2"/>
-<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/DATA/Dropbox/Netduino/main.c" title="main.c" tooltip="C:/DATA/Dropbox/Netduino/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/nativeblinky/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1660" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="705" selectionTopPixel="715"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f4xx.c" partName="system_stm32f4xx.c" path="C:/DATA/Dropbox/Netduino/cmsis_boot/system_stm32f4xx.c" title="system_stm32f4xx.c" tooltip="C:/DATA/Dropbox/Netduino/cmsis_boot/system_stm32f4xx.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/nativeblinky/cmsis_boot/system_stm32f4xx.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1521" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="startup_stm32f4xx.c" partName="startup_stm32f4xx.c" path="C:/DATA/Dropbox/Netduino/cmsis_boot/startup/startup_stm32f4xx.c" title="startup_stm32f4xx.c" tooltip="C:/DATA/Dropbox/Netduino/cmsis_boot/startup/startup_stm32f4xx.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/nativeblinky/cmsis_boot/startup/startup_stm32f4xx.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="15726" selectionTopPixel="5520"/>
-</editor>
-<editor activePart="true" focus="true" id="org.coocox.builder.ui.editors.ConfigEditor" name="" partName="Configuration" title="Configuration" tooltip="" workbook="DefaultEditorWorkbook">
-<input factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory">
-<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="6" verticalPosition="0"/>
+<editor activePart="true" focus="true" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" partName="Repository" title="Repository" tooltip="Repository" workbook="DefaultEditorWorkbook">
+<input factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory">
+<subPage horizontalPosition="0" selectedItemId="0" subPageIndex="2" verticalPosition="581"/>
 </input>
 </editor>
 </editors>
@@ -48,7 +38,7 @@
 <element path="/nativeblinky"/>
 </expanded>
 <selection>
-<element path="/nativeblinky"/>
+<element path="/nativeblinky/ARMduino.h"/>
 </selection>
 </viewState>
 </view>
@@ -64,6 +54,7 @@
 <view id="org.eclipse.search.ui.views.SearchView" partName="Search">
 <viewState isPinned="false">
 <view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
+<view IMemento.internal.id="org.eclipse.cdt.ui.pdomSearchViewPage" definitionColumnWidth="150" locationColumnWidth="300" matchColumnWidth="300" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" showEnclosingDefinitions="true"/>
 </viewState>
 </view>
 <view id="org.eclipse.debug.ui.DebugView" partName="Debug">
@@ -79,7 +70,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.coocox.builder.ui.editors.ConfigEditor" activePerspective="org.coocox.builder.perspective.CoBuilder">
+<perspectives activePart="org.coocox.builder.ui.editors.repository.RepositoryBrowser" activePerspective="org.coocox.builder.perspective.CoBuilder">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.coocox.builder.ui.PerspectiveCoBuilder" id="org.coocox.builder.perspective.CoBuilder" label="CooCox CoBuilder"/>
 <alwaysOnActionSet id="org.coocox.component.ui.actionSet"/>
@@ -263,11 +254,6 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/nativeblinky/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/nativeblinky/cmsis_boot/system_stm32f4xx.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/nativeblinky/cmsis_boot/startup/startup_stm32f4xx.c"/>
-<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
-<org.coocox.builder.ui.editors.ConfigEditor/>
-</editor>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/nativeblinky/cmsis_boot/stm32f4xx.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/nativeblinky/cmsis_boot/system_stm32f4xx.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/nativeblinky/cmsis_boot/system_stm32f4xx.h"/>
@@ -286,147 +272,163 @@
 <org.coocox.builder.ui.editors.ConfigEditor/>
 </editor>
 <editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
-<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="6" verticalPosition="0"/>
+<org.coocox.builder.ui.editors.ConfigEditor/>
+</editor>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor/>
+</editor>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/nativeblinky/main.c"/>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor/>
+</editor>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor/>
+</editor>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/nativeblinky/armduino.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/nativeblinky/cmsis/core_cm4.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/nativeblinky/cmsis_lib/include/stm32f4xx_gpio.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/nativeblinky/cmsis_lib/source/stm32f4xx_gpio.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/nativeblinky/armduino.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/nativeblinky/cmsis_boot/startup/startup_stm32f4xx.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/nativeblinky/ARMduino.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/nativeblinky/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/nativeblinky/ARMduino.h"/>
+<editor factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser">
+<subPage horizontalPosition="0" selectedItemId="0" subPageIndex="2" verticalPosition="581"/>
 </editor>
 </editors>
-<item historyLabel="system_stm32f4xx.c" index="1">
-<position info="not_deleted" x="15009" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="1">
-<position info="not_deleted" x="15084" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="1">
-<position info="not_deleted" x="14881" y="18"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="1">
-<position info="not_deleted" x="15250" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="1">
-<position info="not_deleted" x="15325" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="1">
-<position info="not_deleted" x="15469" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="1">
-<position info="not_deleted" x="15598" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="1">
-<position info="not_deleted" x="15654" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="1">
-<position info="not_deleted" x="15756" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="1">
-<position info="not_deleted" x="10023" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="1">
-<position info="not_deleted" x="10124" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1676" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="1">
-<position info="not_deleted" x="12228" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="1">
-<position info="not_deleted" x="12265" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="1">
-<position info="not_deleted" x="12666" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="1">
-<position info="not_deleted" x="12728" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="1">
-<position info="not_deleted" x="12783" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="1">
-<position info="not_deleted" x="12863" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="1">
-<position info="not_deleted" x="13018" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="1">
-<position info="not_deleted" x="13116" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="1">
-<position info="not_deleted" x="13182" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1676" y="0"/>
-</item>
-<item historyLabel="startup_stm32f4xx.c" index="2">
+<item historyLabel="system_stm32f4xx.h" index="3">
 <position info="not_deleted" x="1036" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Configuration" index="3"/>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1630" y="0"/>
-</item>
-<item historyLabel="stm32f4xx.h" index="4">
-<position/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1630" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="5">
-<position/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1630" y="0"/>
-</item>
-<item historyLabel="stm32f4xx.h" index="4">
+<item historyLabel="stm32f4xx.h" index="1">
 <position info="not_deleted" x="2641" y="0"/>
 </item>
-<item historyLabel="system_stm32f4xx.h" index="6">
-<position info="not_deleted" x="1036" y="0"/>
-</item>
-<item historyLabel="stm32f4xx.h" index="4">
-<position info="not_deleted" x="2641" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="5">
+<item historyLabel="system_stm32f4xx.c" index="2">
 <position info="not_deleted" x="1111" y="0"/>
 </item>
-<item historyLabel="Configuration" index="7"/>
-<item historyLabel="system_stm32f4xx.c" index="5">
+<item historyLabel="Configuration" index="4"/>
+<item historyLabel="system_stm32f4xx.c" index="2">
 <position info="not_deleted" x="1111" y="0"/>
 </item>
-<item historyLabel="stm32f4xx.h" index="4">
+<item historyLabel="stm32f4xx.h" index="1">
 <position info="not_deleted" x="2641" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
 <position info="not_deleted" x="1630" y="0"/>
 </item>
-<item historyLabel="startup_stm32f4xx.c" index="8">
+<item historyLabel="startup_stm32f4xx.c" index="5">
 <position info="not_deleted" x="5937" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
 <position info="not_deleted" x="1971" y="0"/>
 </item>
-<item historyLabel="system_stm32f4xx.c" index="9">
+<item historyLabel="system_stm32f4xx.c" index="6">
 <position info="not_deleted" x="1521" y="0"/>
 </item>
-<item historyLabel="startup_stm32f4xx.c" index="8">
+<item historyLabel="startup_stm32f4xx.c" index="5">
 <position info="not_deleted" x="15726" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
 <position info="not_deleted" x="1971" y="0"/>
 </item>
+<item historyLabel="Configuration" index="7"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1660" y="0"/>
+</item>
+<item historyLabel="Configuration" index="8"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1660" y="0"/>
+</item>
+<item historyLabel="Configuration" index="9"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1660" y="0"/>
+</item>
 <item historyLabel="Configuration" index="10"/>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1660" y="0"/>
-</item>
 <item historyLabel="Configuration" index="11"/>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1660" y="0"/>
+<item historyLabel="main.c" index="12">
+<position info="not_deleted" x="1647" y="0"/>
 </item>
-<item historyLabel="Configuration" index="12"/>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1660" y="0"/>
+<item historyLabel="Configuration" index="13"/>
+<item historyLabel="main.c" index="12">
+<position info="not_deleted" x="134" y="0"/>
 </item>
-<item active="true" historyLabel="Configuration" index="13"/>
+<item historyLabel="Configuration" index="14"/>
+<item historyLabel="main.c" index="12">
+<position info="not_deleted" x="134" y="0"/>
+</item>
+<item historyLabel="armduino.h" index="15">
+<position info="not_deleted" x="1089" y="0"/>
+</item>
+<item historyLabel="core_cm4.h" index="16">
+<position info="not_deleted" x="0" y="998"/>
+</item>
+<item historyLabel="armduino.h" index="15">
+<position info="not_deleted" x="474" y="0"/>
+</item>
+<item historyLabel="main.c" index="12">
+<position info="not_deleted" x="399" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_gpio.h" index="17">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_gpio.c" index="18">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_gpio.h" index="17">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="main.c" index="12">
+<position info="not_deleted" x="399" y="0"/>
+</item>
+<item historyLabel="core_cm4.h" index="16">
+<position info="not_deleted" x="0" y="998"/>
+</item>
+<item historyLabel="main.c" index="12">
+<position info="not_deleted" x="399" y="0"/>
+</item>
+<item historyLabel="armduino.h" index="15">
+<position info="not_deleted" x="1087" y="0"/>
+</item>
+<item historyLabel="main.c" index="12">
+<position info="not_deleted" x="138" y="26"/>
+</item>
+<item historyLabel="armduino.h" index="15">
+<position info="not_deleted" x="1059" y="0"/>
+</item>
+<item historyLabel="main.c" index="12">
+<position info="not_deleted" x="471" y="0"/>
+</item>
+<item historyLabel="armduino.h" index="19">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="main.c" index="12">
+<position info="not_deleted" x="365" y="0"/>
+</item>
+<item historyLabel="startup_stm32f4xx.c" index="20">
+<position info="not_deleted" x="7542" y="15"/>
+</item>
+<item historyLabel="main.c" index="12">
+<position info="not_deleted" x="365" y="0"/>
+</item>
+<item historyLabel="ARMduino.h" index="21">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="main.c" index="12">
+<position info="not_deleted" x="1550" y="0"/>
+</item>
+<item historyLabel="ARMduino.h" index="21">
+<position info="not_deleted" x="927" y="160"/>
+</item>
+<item historyLabel="main.c" index="22">
+<position info="not_deleted" x="1550" y="0"/>
+</item>
+<item historyLabel="ARMduino.h" index="23">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="main.c" index="22">
+<position info="not_deleted" x="705" y="0"/>
+</item>
+<item active="true" historyLabel="Repository" index="24"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
@@ -434,10 +436,40 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
-<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor" name="" tooltip="">
+<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
 <persistable>
-<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="6" verticalPosition="0"/>
+<subPage horizontalPosition="0" selectedItemId="0" subPageIndex="2" verticalPosition="581"/>
 </persistable>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ARMduino.h" tooltip="nativeblinky/ARMduino.h">
+<persistable path="/nativeblinky/ARMduino.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f10x_gpio.c" tooltip="Olimex/stm_lib/src/stm32f10x_gpio.c">
+<persistable path="/Olimex/stm_lib/src/stm32f10x_gpio.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f10x_conf.h" tooltip="Olimex/cmsis_boot/stm32f10x_conf.h">
+<persistable path="/Olimex/cmsis_boot/stm32f10x_conf.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="Olimex/main.c">
+<persistable path="/Olimex/main.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="startup_stm32f4xx.c" tooltip="nativeblinky/cmsis_boot/startup/startup_stm32f4xx.c">
+<persistable path="/nativeblinky/cmsis_boot/startup/startup_stm32f4xx.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="armduino.h" tooltip="nativeblinky/armduino.h">
+<persistable path="/nativeblinky/armduino.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_gpio.c" tooltip="nativeblinky/cmsis_lib/source/stm32f4xx_gpio.c">
+<persistable path="/nativeblinky/cmsis_lib/source/stm32f4xx_gpio.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_gpio.h" tooltip="nativeblinky/cmsis_lib/include/stm32f4xx_gpio.h">
+<persistable path="/nativeblinky/cmsis_lib/include/stm32f4xx_gpio.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="core_cm4.h" tooltip="nativeblinky/cmsis/core_cm4.h">
+<persistable path="/nativeblinky/cmsis/core_cm4.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx.h" tooltip="nativeblinky/cmsis_boot/stm32f4xx.h">
+<persistable path="/nativeblinky/cmsis_boot/stm32f4xx.h"/>
 </file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="baseflight.uvproj" tooltip="C:\DATA\Dropbox\baseflight\baseflight.uvproj">
 <persistable uri="file:/C:/DATA/Dropbox/baseflight/baseflight.uvproj"/>
@@ -445,43 +477,8 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f4xx.c" tooltip="nativeblinky/cmsis_boot/system_stm32f4xx.c">
 <persistable path="/nativeblinky/cmsis_boot/system_stm32f4xx.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f4xx.h" tooltip="nativeblinky/cmsis_boot/system_stm32f4xx.h">
-<persistable path="/nativeblinky/cmsis_boot/system_stm32f4xx.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx.h" tooltip="nativeblinky/cmsis_boot/stm32f4xx.h">
-<persistable path="/nativeblinky/cmsis_boot/stm32f4xx.h"/>
-</file>
-<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
-<persistable>&#x0A;<subPage/>
-</persistable>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_rcc.c" tooltip="nativeblinky/cmsis_lib/source/stm32f4xx_rcc.c">
-<persistable path="/nativeblinky/cmsis_lib/source/stm32f4xx_rcc.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_rcc.h" tooltip="nativeblinky/cmsis_lib/include/stm32f4xx_rcc.h">
-<persistable path="/nativeblinky/cmsis_lib/include/stm32f4xx_rcc.h"/>
-</file>
-<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
-<persistable>&#x0A;<subPage/>
-</persistable>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_conf.h" tooltip="nativeblinky/cmsis_boot/stm32f4xx_conf.h">
-<persistable path="/nativeblinky/cmsis_boot/stm32f4xx_conf.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="core_cm4.h" tooltip="nativeblinky/cmsis/core_cm4.h">
-<persistable path="/nativeblinky/cmsis/core_cm4.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f4xx.c" tooltip="Blinky mit SysTick/system_stm32f4xx.c">
-<persistable path="/Blinky mit SysTick/system_stm32f4xx.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_it.h" tooltip="Blinky mit SysTick/stm32f4xx_it.h">
-<persistable path="/Blinky mit SysTick/stm32f4xx_it.h"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="baseflight.uvproj" tooltip="C:\DATA\Dropbox\baseflight\baseflight.uvproj">
-<persistable uri="file:/C:/DATA/Dropbox/baseflight/baseflight.uvproj"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="baseflight.uvproj" tooltip="C:\DATA\Dropbox\baseflight\baseflight.uvproj">
-<persistable uri="file:/C:/DATA/Dropbox/baseflight/baseflight.uvproj"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="Olimex/main.c">
+<persistable path="/Olimex/main.c"/>
 </file>
 </mruList>
 </workbench>

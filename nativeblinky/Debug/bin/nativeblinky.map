@@ -2,6 +2,7 @@
 Allocating common symbols
 Common symbol       size              file
 
+nowTicks            0x4               ..\obj\main.o
 msTicks             0x4               ..\obj\main.o
 
 Discarded input sections
@@ -477,11 +478,11 @@ Linker script and memory map
                 0x0800018c       0x6c ..\obj\startup_stm32f4xx.o
                 0x0800018c                Default_Reset_Handler
                 0x0800018c                Reset_Handler
+ .text.Delay    0x080001f8       0x14 ..\obj\main.o
+                0x080001f8                Delay
  .text.SysTick_Handler
-                0x080001f8       0x10 ..\obj\main.o
-                0x080001f8                SysTick_Handler
- .text.Delay    0x08000208       0x14 ..\obj\main.o
-                0x08000208                Delay
+                0x0800020c       0x10 ..\obj\main.o
+                0x0800020c                SysTick_Handler
  .text.init_GPIO
                 0x0800021c       0x3c ..\obj\main.o
                 0x0800021c                init_GPIO
@@ -575,32 +576,34 @@ Linker script and memory map
 .igot.plt       0x20000014        0x0 load address 0x0800051c
  .igot.plt      0x00000000        0x0 ..\obj\stm32f4xx_pwr.o
 
-.bss            0x20000014        0x4 load address 0x0800051c
+.bss            0x20000014        0x8 load address 0x0800051c
                 0x20000014                . = ALIGN (0x4)
                 0x20000014                __bss_start__ = .
                 0x20000014                _sbss = __bss_start__
  *(.bss*)
  *(COMMON)
- COMMON         0x20000014        0x4 ..\obj\main.o
-                0x20000014                msTicks
-                0x20000018                . = ALIGN (0x4)
-                0x20000018                __bss_end__ = .
-                0x20000018                _ebss = __bss_end__
+ COMMON         0x20000014        0x8 ..\obj\main.o
+                0x20000014                nowTicks
+                0x20000018                msTicks
+                0x2000001c                . = ALIGN (0x4)
+                0x2000001c                __bss_end__ = .
+                0x2000001c                _ebss = __bss_end__
 
-.heap           0x20000018        0x0
-                0x20000018                __end__ = .
-                0x20000018                _end = __end__
-                0x20000018                end = __end__
+.heap           0x2000001c        0x0
+                0x2000001c                __end__ = .
+                0x2000001c                _end = __end__
+                0x2000001c                end = __end__
  *(.heap*)
-                0x20000018                __HeapLimit = .
+                0x2000001c                __HeapLimit = .
 
-.co_stack       0x20000018      0x800 load address 0x08000520
-                0x20000018                . = ALIGN (0x8)
+.co_stack       0x2000001c      0x804 load address 0x08000524
+                0x20000020                . = ALIGN (0x8)
+ *fill*         0x2000001c        0x4 
  *(.co_stack .co_stack.*)
- .co_stack      0x20000018      0x800 ..\obj\startup_stm32f4xx.o
-                0x20000018                pulStack
+ .co_stack      0x20000020      0x800 ..\obj\startup_stm32f4xx.o
+                0x20000020                pulStack
                 0x20020000                __StackTop = (ORIGIN (ram) + 0x20000)
-                0x2001f800                __StackLimit = (__StackTop - SIZEOF (.co_stack))
+                0x2001f7fc                __StackLimit = (__StackTop - SIZEOF (.co_stack))
                 0x20020000                PROVIDE (__stack, __StackTop)
                 0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region ram  overflowed with stack)
 LOAD ..\obj\stm32f4xx_pwr.o
@@ -617,12 +620,12 @@ LOAD c:/coocox/gcc/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/
 END GROUP
 OUTPUT(nativeblinky.elf elf32-littlearm)
 
-.debug_info     0x00000000     0x254f
+.debug_info     0x00000000     0x2560
  .debug_info    0x00000000      0x11a ..\obj\startup_stm32f4xx.o
- .debug_info    0x0000011a      0xa1c ..\obj\main.o
- .debug_info    0x00000b36      0xc8c ..\obj\stm32f4xx_rcc.o
- .debug_info    0x000017c2      0x7d6 ..\obj\stm32f4xx_gpio.o
- .debug_info    0x00001f98      0x5b7 ..\obj\system_stm32f4xx.o
+ .debug_info    0x0000011a      0xa2d ..\obj\main.o
+ .debug_info    0x00000b47      0xc8c ..\obj\stm32f4xx_rcc.o
+ .debug_info    0x000017d3      0x7d6 ..\obj\stm32f4xx_gpio.o
+ .debug_info    0x00001fa9      0x5b7 ..\obj\system_stm32f4xx.o
 
 .debug_abbrev   0x00000000      0x8c3
  .debug_abbrev  0x00000000       0xea ..\obj\startup_stm32f4xx.o
@@ -657,23 +660,23 @@ OUTPUT(nativeblinky.elf elf32-littlearm)
  .debug_ranges  0x000001a8       0x78 ..\obj\stm32f4xx_gpio.o
  .debug_ranges  0x00000220       0x18 ..\obj\system_stm32f4xx.o
 
-.debug_line     0x00000000      0xb6d
+.debug_line     0x00000000      0xb9f
  .debug_line    0x00000000       0x89 ..\obj\startup_stm32f4xx.o
- .debug_line    0x00000089      0x1f8 ..\obj\main.o
- .debug_line    0x00000281      0x4da ..\obj\stm32f4xx_rcc.o
- .debug_line    0x0000075b      0x2ba ..\obj\stm32f4xx_gpio.o
- .debug_line    0x00000a15      0x158 ..\obj\system_stm32f4xx.o
+ .debug_line    0x00000089      0x22a ..\obj\main.o
+ .debug_line    0x000002b3      0x4da ..\obj\stm32f4xx_rcc.o
+ .debug_line    0x0000078d      0x2ba ..\obj\stm32f4xx_gpio.o
+ .debug_line    0x00000a47      0x158 ..\obj\system_stm32f4xx.o
 
-.debug_str      0x00000000     0x127a
+.debug_str      0x00000000     0x1283
  .debug_str     0x00000000      0x159 ..\obj\startup_stm32f4xx.o
                                 0x16b (size before relaxing)
- .debug_str     0x00000159      0x910 ..\obj\main.o
-                                0xa18 (size before relaxing)
- .debug_str     0x00000a69      0x63d ..\obj\stm32f4xx_rcc.o
+ .debug_str     0x00000159      0x919 ..\obj\main.o
+                                0xa21 (size before relaxing)
+ .debug_str     0x00000a72      0x63d ..\obj\stm32f4xx_rcc.o
                                 0x864 (size before relaxing)
- .debug_str     0x000010a6      0x150 ..\obj\stm32f4xx_gpio.o
+ .debug_str     0x000010af      0x150 ..\obj\stm32f4xx_gpio.o
                                 0x4de (size before relaxing)
- .debug_str     0x000011f6       0x84 ..\obj\system_stm32f4xx.o
+ .debug_str     0x000011ff       0x84 ..\obj\system_stm32f4xx.o
                                 0x3be (size before relaxing)
 
 .comment        0x00000000       0x70

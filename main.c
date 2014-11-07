@@ -4,9 +4,7 @@
 #include "stm32f4xx_gpio.h"
 #include "stm32f4xx_tim.h"
 #include "stm32f4xx_rcc.h"
-
-
-
+#include "ARMduino.h"
 
 volatile uint32_t msTicks;
 
@@ -18,18 +16,9 @@ void SysTick_Handler(void)
 {
   msTicks++;
 }
-
-void Delay (uint32_t dlyTicks)
-{
-  uint32_t curTicks;
-
-  curTicks = msTicks;
-  while ((msTicks - curTicks) < dlyTicks);
-}
-
 void init_GPIO(void)
 	{
-		/* This TypeDef is a structure defined in the
+	/* This TypeDef is a structure defined in the
 	 * ST's library and it contains all the properties
 	 * the corresponding peripheral has, such as output mode,
 	 * pullup / pulldown resistors etc.
@@ -61,9 +50,7 @@ void init_GPIO(void)
 
 int main(void)
 {
-	//volatile unsigned int i=0;
-
-
+	//arduino setup()...
 	SystemCoreClockUpdate();
 	if (SysTick_Config(SystemCoreClock / 1000))
 	{ /* SysTick 1 msec interrupts  */
@@ -71,12 +58,8 @@ int main(void)
 	}
 
 	init_GPIO();
-
-	//RCC ->AHB1ENR |= ( 1<<0 ); // enable clk for PORT A
-	//GPIOA ->MODER |= (1<<20); // enable Port A pin10 as output
-
-	//GPIOA ->ODR |= (0<<10); // GPIOA pin10 OFF
 	
+//arduino loop()...
     while(1)
     {
     	Delay(900);
