@@ -296,7 +296,7 @@ void Default_Reset_Handler(void)
 #endif	
 
   /* Call the application's entry point.*/
-  SystemInit();
+
   main();
 }
 
