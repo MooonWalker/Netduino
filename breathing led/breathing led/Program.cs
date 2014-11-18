@@ -21,24 +21,28 @@ namespace breathing_led
 
             while (true)
             {
-                                    
+                for (; i < iMax; i++)
+                {
+
                     ledPort.Write(true);
-                    funDelay(50);
+                    funDelay(i);
 
                     ledPort.Write(false);
-                    //funDelay(iMax - i);                    
-                    funDelay(200);                    
-               
+                    funDelay(iMax - i);
 
-                //for (; i > iMin; i--)
-                //{                    
-                //    ledPort.Write(true);
-                //    funDelay(i);
+                }
 
-                //    ledPort.Write(false);
-                //    funDelay(iMax - i);                    
-                //}
-                //funDelay(10000);
+                for (; i > iMin; i--)
+                {
+
+                    ledPort.Write(true);
+                    funDelay(i);
+
+                    ledPort.Write(false);
+                    funDelay(iMax - i);
+
+                }
+
             }
         }
 

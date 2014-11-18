@@ -1,4 +1,3 @@
-C:\DATA\Dropbox\Netduino\breathing led\breathing led\obj\Debug\breathing led.csprojResolveAssemblyReference.cache
 C:\DATA\Dropbox\Netduino\breathing led\breathing led\obj\Debug\TinyCLR_DebugReferences.cache
 C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\le\breathing led.exe
 C:\DATA\Dropbox\Netduino\breathing led\breathing led\bin\Debug\be\breathing led.exe
