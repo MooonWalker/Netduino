@@ -1,26 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wall -ffunction-sections -g -O1 -c -DSTM32F405RG -DSTM32F4XX -D__FPU_USED -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\DATA\Dropbox\Netduino\cmsis -I..\..\..\..\..\DATA\Dropbox\Netduino\cmsis_lib\include -I..\..\..\..\..\DATA\Dropbox\Netduino\cmsis_boot -I..\..\..\..\..\DATA\Dropbox\Netduino\cmsis_lib -I..\..\..\..\..\DATA\Dropbox -I..\..\..\..\..\DATA\Dropbox\Netduino -I..\..\..\..\..\DATA\Dropbox\Netduino\atilib">
-      <target file="stm32f4xx_tim.o" lastModified="1499477e39e">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="14593188107"/>
-      </target>
-      <target file="stm32f4xx_rcc.o" lastModified="1499477e19b">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="14593160eab"/>
-      </target>
-      <target file="stm32f4xx_pwr.o" lastModified="1499477e025">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_pwr.c" lastModified="1459316ab04"/>
-      </target>
-      <target file="system_stm32f4xx.o" lastModified="1499477e285">
-         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="145925ab359"/>
-      </target>
-      <target file="stm32f4xx_gpio.o" lastModified="1499477e218">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="1459316554a"/>
-      </target>
-      <target file="main.o" lastModified="1499477e0f0">
-         <source file="..\..\..\main.c" lastModified="1499477dd67"/>
-      </target>
-      <target file="startup_stm32f4xx.o" lastModified="1499477e073">
-         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1498bf3035a"/>
+      <target file="main.o" lastModified="1498bf86683">
+         <source file="..\..\..\main.c" lastModified="1498bf861d3"/>
       </target>
    </processor>
 </history>

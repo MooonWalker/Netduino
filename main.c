@@ -1,16 +1,22 @@
+
+
 #include "stm32f4xx_conf.h"
 #include "ARMduino.h"
 
+volatile uint32_t msTicks;
 
 
+/*----------------------------------------------------------------------------
+  SysTick_Handler
+ *----------------------------------------------------------------------------*/
 void SysTick_Handler(void)
 {
   msTicks++;
 }
 
-
 void init_GPIO(void)
 	{
+
 		GPIO_InitTypeDef GPIO_InitStruct;
 
 		RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
@@ -26,8 +32,7 @@ void init_GPIO(void)
 
 int main(void)
 {
-	SystemInit();  //ARM init
-
+	SystemInit();
 	//arduino setup()...
 	SystemCoreClockUpdate();
 	if (SysTick_Config(SystemCoreClock / 1000))
@@ -36,18 +41,18 @@ int main(void)
 	}
 
 	init_GPIO();
-	GPIO_WriteBit(GPIOA, GPIO_Pin_10, Bit_SET);
+	
 //arduino loop()...
     while(1)
     {
-    	Delay(1500);
-
+    	Delay(900);
+    	//for (i = 0; i < 900000; ++i);
     	GPIO_WriteBit(GPIOA, GPIO_Pin_10, Bit_SET);
+        //GPIOA ->ODR |= (1<<10); // GPIOA pin10 ON
 
-
-    	Delay(100);
-
+    	Delay(200);
+    	//for (i = 0; i < 200000; ++i);
     	GPIO_WriteBit(GPIOA, GPIO_Pin_10, Bit_RESET);
-
+        //GPIOA ->ODR &= ~(1<<10); // GPIOA pin10 OFF toggle
     }
 }

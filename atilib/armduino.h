@@ -21,16 +21,11 @@
  *
  ******************************************************************************/
 volatile uint32_t nowTicks;
-volatile uint32_t msTicks;
-/*----------------------------------------------------------------------------
-  SysTick_Handler
- *----------------------------------------------------------------------------*/
-
 
 void Delay (uint32_t dlyTicks)
 {
   uint32_t curTicks;
 
-  curTicks = msTicks;
-  while ((msTicks - curTicks) < dlyTicks);
+  curTicks = nowTicks;
+  while ((nowTicks - curTicks) < dlyTicks);
 }
